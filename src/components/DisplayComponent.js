@@ -10,7 +10,8 @@ export default class DisplayComponent extends Component {
 
         this.state = {
             images: IMAGES,
-            activeIndex: 0
+            activeIndex: 0,
+            animating: false
         }
         this.next= this.next.bind(this);
         this.previous= this.previous.bind(this);
@@ -20,11 +21,15 @@ export default class DisplayComponent extends Component {
     }
 
     onExiting() {
-         this.state.animating = true;
+         this.setState({
+           animating: true,
+         }); 
     }
 
     onExited() {
-        this.state.animating = false;  
+        this.setState({
+          animating: false,
+        });  
     }   
 
 
@@ -62,8 +67,8 @@ export default class DisplayComponent extends Component {
                 onExiting={this.onExiting}
                 onExited={this.onExited}  
                 key={image.id}>
-                    <img  className="d-block w-100 img-fluid" src={image.src} alt={image.altText} />
-                    <CarouselCaption captionText={image.caption} captionHeader={image.captionHead} />
+                    <img  className="d-block w-100 carouselImage" src={image.src} alt={image.altText} />
+                    <CarouselCaption className='h2 captionText' captionText={image.caption} captionHeader={image.captionHead} />
                 </CarouselItem>
             );
         });

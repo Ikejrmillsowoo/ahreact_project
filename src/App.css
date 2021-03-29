@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500px;
+    font-size: 15px;
+}
+
+body, html {
+    font-family: 'Courgette',
+    cursive;
+}
+
+/* navigation */
+.headerItem {
+    background-image: linear-gradient(to right, #1a33a3, white);
+    color: white;
+    font-size: 1em;
+}
+
+.toggleBar {
+    border:2px solid black;
+    color: black;
+} 
+
+
+
+
+.headerItem h4 {
+    color: black;
+    font-size: 1.7em;
+
+}
+
+.headerItem h4 span {
+    color: crimson;
+    font-size: 1.6em;
+}
+
+.headerItem .navbar-nav .nav-item a{
+    color: black;
+    font-size: 1.3em;
+}
+
+/* end navigation */
+
+/* Home */
+.home-container {
+    margin-top: 130px;
+}
+
+
+/* end home */
+
+/* carousel */
+
+.carouselImage {
+    border-radius: solid black 5px;
+    border-radius: 10px;
+}
+
+.captionText {
+    background-color: black;
+    opacity: .75;
+    border-radius: black solid 10px;
+}
+
+.captionText h2 {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* end carousel */
+
+/* news */
+.newsRow {
+    border: solid black 3px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+/* end news */
+
+/* About */
+.about-container {
+    margin-top: 130px;
+    font-size: 1em;
+}
+
+.about-container h2 {
+    font-size: 3em;
+
+}
+
+.about-container h3 {
+    font-size: 2em;
+}
+
+.about-container p  {
+    font-size: 1.4em;
+    
+}
+
+.about-container p span {
+    font-size: 2em;
+    color: crimson;
+}
+
+/* end About */
+
+/* contact */
+.contact-header {
+    margin-top: 100px;
+}
+
+.contact-header h1 {
+    text-decoration: underline;
+    padding-bottom: 30px;
+    font-size: 2em;
+}
+.labelFonts {
+     font-size: 1.3em;
+ }
+
+/* end contact */
+
+/* service */
+.service-container {
+    margin-top: 130px;
+}
+
+/* end Service */
+
+
+
+/* messages */
+.message-container {
+    margin-top: 130px;
+}
+/* end messages */
+/* footer */
+footer {
+    background-image: linear-gradient(to right, #1a33a3, white);
+    color: white;
+}
+footer .navbar-nav .footer-nav .footerItem {
+    color: black;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.footerCopy {
+    color: black;
+    font-size: 20px;
+}
+
+.socialIcons {
+    color: black;
+}
+
+.footer-logo {
+    color: black;
+    font-size: 2em;
+}
+
+.footer-logo span {
+    color: crimson;
+    font-size: 1.3em;
+}
+/* end footer  */

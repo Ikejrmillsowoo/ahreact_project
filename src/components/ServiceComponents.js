@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   Card,
   CardTitle,
-  CardGroup,
   CardBody,
   CardText,
   Button,
@@ -43,7 +42,7 @@ class Services extends Component {
     });
     return (
       <>
-        <Container className="mt-5" >
+        <Container className="service-container" >
         <h3>Services</h3>
         <hr/>
           <Row >{serviceItem}</Row>
